@@ -1,0 +1,91 @@
+body {
+    margin: 0; /* Removes any default margins from the body */
+    display: flex; /* Enables Flexbox for easy centering */
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; Ensures the body fills the full height of the viewport
+    background-color: #f0f0f0; /* Optional: Light background to contrast with the calculator */
+  }
+
+.body{ background-color: #242530;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the div horizontally */
+    align-items: flex-start; 
+    width:400px ;
+    height:367px;
+     border-radius: 10px;
+     outline: none;
+
+}
+.Display {
+  /* display: flex; */
+    background-color: hsl(235, 34%, 35%);
+    width:350px;
+    Height: 70px;
+    margin-top: 17px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 1cm;
+    text-align: end;
+    font-weight: 150px;
+    color: white;
+}
+.Container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr); /* Numbers occupy 3 columns, operators 2 columns */
+  gap: 7px;
+  width: 100%;  
+}
+.Operator {
+  background-color: hsl(36, 91%, 53%);
+  color: white;
+}
+
+button{
+background-color:#404258 ;
+width: 65px;
+height: 45px;
+border-radius: 35px;
+outline: none;
+border: none;
+font-size: 28px;
+font-weight: bold;
+letter-spacing: 0%;
+color: aliceblue;
+box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.251); /* Adds a soft shadow */
+transition: box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+#history-button {
+  grid-column: span 1; /* Spans the entire row */
+  background-color: red; /* Grayish background for history button */
+  color: white; /* Text color */
+  font-size: 1rem; /* Slightly smaller font */
+}
+button:hover {
+  background-color: hsl(235, 16%, 50%); /* Darker yellow when hovered */
+  color: white;
+  cursor: pointer;  /* Optional: Changes text color on hover */
+}
+
+button.Operator:hover {
+  background-color: gold; /* Darker yellow when hovered */
+  color: white;
+  cursor: pointer;  /* Optional: Changes text color on hover */
+}
+#history-button:hover {
+  background-color: hsl(0, 100%, 30%); /* Darker yellow when hovered */
+  color: white;
+  cursor: pointer; 
+
+}
+
+
+
+
+
+
+
+
